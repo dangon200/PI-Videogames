@@ -1,0 +1,41 @@
+html, body {
+    margin:0;
+    height:100%;
+    padding:0;
+}
+
+.LoginComponent {
+        
+  background-image: url("../Images/Portada.jpeg");
+    
+    width:100vw;
+    height:100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.lpcontainer {
+    display:flex;
+    width: 100%;
+    margin: 100px solid salmon;
+}
+.but{
+    
+    position: relative;
+    background-color: rgba(255, 0, 0, 0.903);   
+    border-radius:50%;
+    display:flex;
+    margin-top: 25%;
+    margin-left: 50%;
+    
+}
+.but:hover{
+    cursor:pointer;
+    font-style:italic;
+    background-color:rgb(1, 196, 85);
+    color: #fff;
+}
+
+
