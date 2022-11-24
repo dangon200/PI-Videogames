@@ -15,7 +15,7 @@ export const TOGGLE_LOADING = 'TOGGLE_LOADING'
 
 export const getAllGames = () => {
     return async function (dispatch) {
-        const response = await axios.get('https://mygames-backend-production.up.railway.app/videogames')
+        const response = await axios.get('https://mygames-backend-production.up.railway.app:443/videogames')
 
         return dispatch({
             type: GET_ALL_GAMES,
@@ -27,7 +27,7 @@ export const getAllGames = () => {
 export const getGameById = (id, createdByUser) => {
     return async function (dispatch) {
         const response = await axios.get(
-            `https://mygames-backend-production.up.railway.app/videogame/${id}?db=${createdByUser}`
+            `https://mygames-backend-production.up.railway.app:443/videogame/${id}?db=${createdByUser}`
         )
 
         return dispatch({
@@ -40,7 +40,7 @@ export const getGameById = (id, createdByUser) => {
 export const createGame = data => {
     return async function (dispatch) {
         const response = await axios.post(
-            'https://mygames-backend-production.up.railway.app/videogames',
+            'https://mygames-backend-production.up.railway.app:443/videogames',
             data
         )
         return dispatch({
@@ -52,7 +52,7 @@ export const createGame = data => {
 
 export const getGenres = () => {
     return async function (dispatch) {
-        const response = await axios.get('https://mygames-backend-production.up.railway.app/genres')
+        const response = await axios.get('https://mygames-backend-production.up.railway.app:443/genres')
 
         return dispatch({
             type: GET_GENRES,
@@ -63,7 +63,7 @@ export const getGenres = () => {
 
 export const getPlatforms = () => {
     return async function (dispatch) {
-        const response = await axios.get('https://mygames-backend-production.up.railway.app/platforms')
+        const response = await axios.get('https://mygames-backend-production.up.railway.app:443/platforms')
 
         return dispatch({
             type: GET_PLATFORMS,
@@ -76,7 +76,7 @@ export const searchGame = name => {
     return async function (dispatch) {
         try {
             const response = await axios.get(
-                `https://mygames-backend-production.up.railway.app/videogames?name=${name}`,
+                `https://mygames-backend-production.up.railway.app:443/videogames?name=${name}`,
                 { validateStatus: false }
             )
 
