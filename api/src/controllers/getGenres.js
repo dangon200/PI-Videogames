@@ -18,7 +18,6 @@ const getGenres = async apiKey => {
 
     let url = `https://api.rawg.io/api/genres?key=${apiKey}`
 
-    try {
         let genres = []
         let genresFromDB
 
@@ -45,9 +44,9 @@ const getGenres = async apiKey => {
             genres = createGenres(genres.sort())
             return genres
         }
-    } catch (error) {
-        throw new Error('error in getGenres')
-    }
+   /*  } catch (error) {
+        throw new Error(error)
+    } */
 }
 
 module.exports = getGenres

@@ -1,7 +1,7 @@
 require('dotenv').config()
 
 const { Router } = require('express')
-const { API_KEY } = process.env
+import {API_KEY} from './config.js'
 const getGames = require('../controllers/getGames')
 const searchGame = require('../controllers/searchGame')
 const getGenres = require('../controllers/getGenres')

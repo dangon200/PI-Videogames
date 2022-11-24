@@ -19,17 +19,17 @@
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const server = require('./src/app.js')
 require('dotenv').config()
-const { API_KEY } = process.env
 const getGenres = require('./src/controllers/getGenres.js')
 const getPlatforms = require('./src/controllers/getPlatforms.js')
 const { conn } = require('./src/db.js')
+import {PORT, API_KEY} from './config.js'
 
 // Syncing all the models at once.
 async function main() {
     try {
-        conn.sync({ force: true }).then(() => {
-            server.listen(3001, () => {
-                console.log('%s listening at 3001') // eslint-disable-line no-console
+        conn.sync({}).then(() => {
+            server.listen(PORT, () => {
+                console.log(`%s listening at ${PORT}`) // eslint-disable-line no-console
             })
         })
         await getGenres(API_KEY)
