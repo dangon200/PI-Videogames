@@ -1,0 +1,57 @@
+.pi__search {
+    display: flex;
+    width: 350px;
+    position: absolute;
+    top: 0px;
+    left: 42%;
+}
+
+.pi__search > form > input {
+    background: #fff;
+    padding: 1rem 1.5rem;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px 0 0 10px;
+    font-family: var(--font-family);
+}
+
+.pi__search > form > button {
+    background: #eee;
+    padding: 1rem 1.5rem;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-family: var(--font-family);
+}
+
+.pi__search > form > button:hover {
+    background-color: #111;
+    border: 1px solid #eee;
+}
+
+.pi__search > form > button:hover .hover_img {
+    display: inline-block;
+}
+
+.pi__search > form > button:hover .init_img {
+    display: none;
+}
+
+.init_img {
+    width: 13px;
+    filter: invert(0%) sepia(14%) saturate(6620%) hue-rotate(354deg)
+        brightness(93%) contrast(87%);
+}
+
+.hover_img {
+    display: none;
+    width: 13px;
+    filter: invert(100%) sepia(55%) saturate(146%) hue-rotate(216deg)
+        brightness(113%) contrast(87%);
+}
+
+.error {
+    border: 1px solid red !important;
+}

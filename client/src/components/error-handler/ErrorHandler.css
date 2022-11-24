@@ -1,0 +1,45 @@
+.pi__error {
+    background: #eee;
+    color: #111;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 3rem 0;
+    min-width: 500px;
+    min-height: 300px;
+    border-radius: 25px;
+    position: relative;
+    z-index: 5;
+}
+
+.pi__error > h1 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.pi__error > p {
+    font-size: 18px;
+    margin-top: 0.5rem;
+}
+
+.pi__error > button {
+    background-color: #111;
+    color: #eee;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.pi__error > button:hover {
+    background-color: #eee;
+    color: #111;
+    border: 1px solid #111;
+}

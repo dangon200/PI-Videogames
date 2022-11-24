@@ -1,0 +1,223 @@
+.pi__create {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.pi__create-head {
+    width: 230px;
+    background-color: #111;
+    padding: 15px;
+    border-radius: 25px;
+    position: absolute;
+    top: 35px;
+    right: 230px;
+    z-index: 5;
+}
+
+.pi__create-container {
+    width: 75%;
+    min-height: 400px;
+    color: #eee;
+    background-color: #eee;
+    border-radius: 25px;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.pi__create-back {
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 5;
+    transition: all 0.5s;
+}
+
+.pi__create-back > img {
+    width: 20px;
+    margin-right: 5px;
+    filter: invert(99%) sepia(0%) saturate(6208%) hue-rotate(273deg)
+        brightness(131%) contrast(87%);
+}
+
+.pi__create-back > span {
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    align-self: center;
+}
+
+.pi__create-back > span:hover {
+    text-decoration: underline;
+}
+
+.pi__create-container_side {
+    flex: 1;
+    padding: 2rem;
+}
+
+.pi__create-container_side > h1 {
+    font-size: 64px;
+    font-weight: 800;
+    color: #111;
+}
+
+.pi__create-container_form {
+    flex: 1;
+    background-color: #111;
+    padding: 2rem;
+}
+
+.pi__create-container_form > h1 {
+    color: #eee;
+}
+
+.pi__create-container_form > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.pi__create-container_form > form > label {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.pi__create-container_form-sm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
+
+.pi__create-container_form-sm > input {
+    width: 150px;
+    margin: 0 7px;
+}
+
+.pi__create-container_form-sm_rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pi__create-container_form-sm > label {
+    margin: 0 5px;
+}
+
+.pi__create-container_form-sm_rating > label {
+    margin: 1rem;
+}
+
+.pi__create-input {
+    background: #fff;
+    width: 100%;
+    color: #111;
+    padding: 0.5rem 1rem;
+    margin-bottom: 5px;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-family: var(--font-family);
+}
+
+.pi__create-container_form > form > textarea {
+    background: #fff;
+    width: 100%;
+    color: #111;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border-radius: 5px;
+    font-family: var(--font-family);
+}
+
+.pi__create-button {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.pi__create-button_send {
+    background-color: #eee;
+    padding: 1rem 2rem;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-family: var(--font-family);
+    margin: 0 1rem;
+}
+
+.pi__create-button_reset {
+    background-color: #111;
+    color: #eee;
+    padding: 1rem 2rem;
+    outline: none;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-family: var(--font-family);
+}
+
+.pi__create-button_send:hover {
+    background-color: #111;
+    color: #eee;
+    border: 1px solid #eee;
+}
+
+.pi__create-button_reset:hover {
+    background-color: #eee;
+    color: #111;
+}
+
+.danger {
+    color: rgb(214, 63, 63) !important;
+}
+
+input.danger,
+select.danger,
+textarea.danger {
+    border: 1px solid rgb(214, 63, 63) !important;
+}
+
+.pi__create-selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.input-selected {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #eee;
+    padding: 0.25rem 0.45rem;
+    font-size: 12px;
+    border-radius: 10px;
+    margin: 0.25rem;
+}
+
+.button-selected {
+    display: flex;
+    align-items: center;
+    background: #111;
+    color: #eee;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    cursor: pointer;
+}

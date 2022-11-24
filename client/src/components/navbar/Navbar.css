@@ -1,0 +1,81 @@
+.pi__navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pi__navbar-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.pi__navbar-form {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.pi__navbar-head_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pi__navbar-head_buttons > a {
+    background: #eee;
+    border-radius: 10px;
+    max-width: 13px;
+    max-height: 17px;
+    overflow: hidden;
+    border: 1px solid transparent;
+    outline: none;
+    padding: 1rem 1.5rem;
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-family: var(--font-family);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.init_plus {
+    width: 13px;
+    filter: invert(0%) sepia(14%) saturate(6620%) hue-rotate(354deg)
+        brightness(93%) contrast(87%);
+}
+
+.hover_plus {
+    display: none;
+    width: 13px;
+    filter: invert(100%) sepia(55%) saturate(146%) hue-rotate(216deg)
+        brightness(113%) contrast(87%);
+}
+
+.pi__navbar-head_buttons > a:hover {
+    background: #111;
+    border: 1px solid #eee;
+    max-width: 150px;
+}
+
+.pi__navbar-head_buttons > a:hover .init_plus {
+    display: none;
+}
+
+.pi__navbar-head_buttons > a:hover .hover_plus {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.pi__navbar-head_buttons > a > span {
+    display: inline-block;
+    color: #eee;
+    white-space: nowrap;
+}

@@ -1,0 +1,30 @@
+.pi__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.pi__pagination > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #eee;
+    color: #111;
+    width: 25px;
+    height: 25px;
+    padding: 1rem;
+    margin: 10px 7px;
+    cursor: pointer;
+    transition: all 0.5s;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+.pi__pagination > button:hover {
+    color: #eee;
+    background: #111;
+    border: 1px solid #eee;
+}

@@ -1,0 +1,46 @@
+.pi__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+}
+
+.pi__logo img {
+    width: 350px;
+    filter: drop-shadow(3px 3px 15px rgba(238, 238, 4, 0.5));
+}
+
+.pi__logo h1 {
+    font-family: var(--font-logo);
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: -2px;
+    line-height: 30px;
+    align-items: center;
+    position: absolute;
+    top: 7.5rem;
+    left: 2.5rem;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #eeee04, 0 0 0.5em #eeee04,
+        0 0 0.1em #eeee04;
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #eeee04, 0 0 0.5em #eeee04,
+            0 0 0.1em #eeee04;
+    }
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
