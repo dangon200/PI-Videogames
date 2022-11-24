@@ -6,7 +6,7 @@ const Logo = () => {
     return (
         <div className="pi__logo">
             <img src={logo} alt="logo" />
-            <h1>Videogames</h1>
+            <h1>My Games</h1>
         </div>
     )
 }

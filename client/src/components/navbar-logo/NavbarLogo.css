@@ -10,8 +10,8 @@
 .pi__navbar-logo > h1 {
     font-family: var(--font-logo);
     color: white;
-    font-size: 2.5rem;
-    font-weight: 600;
+    font-size: 4rem;
+    font-weight: 800;
     letter-spacing: -2px;
     line-height: 30px;
     align-items: center;
